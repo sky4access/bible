@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 
+	_ "github.com/mattn/go-sqlite3"
 	"github.com/sky4access/bible/app/bible"
 )
 
@@ -17,8 +18,14 @@ func main() {
 	flag.StringVar(&configFile, "config", "config.yaml", "config yaml file")
 	flag.Parse()
 
-	b := bible.Esv{ConfigFile: configFile}
-	b.Init()
-	b.Fetch()
-	b.Print()
+	esv := bible.Esv{ConfigFile: configFile}
+	esv.Init()
+	esv.Fetch()
+	esv.Print()
+
+	krv := bible.Krv{ConfigFile: configFile}
+	krv.Init()
+	krv.Fetch()
+	krv.Print()
+
 }

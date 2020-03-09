@@ -41,7 +41,6 @@ func (e *Esv) Fetch() {
 	space := regexp.MustCompile(`\s+`)
 
 	for i, v := range e.Input.Memories {
-		v = space.ReplaceAllString(v, " ")
 		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
 		e.Input.Memories[i] = v
 	}
@@ -65,7 +64,6 @@ func (e *Esv) Fetch() {
 	e.MemoryVerses = passages
 
 	for i, v := range e.Input.Verses {
-		v = space.ReplaceAllString(v, " ")
 		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
 		e.Input.Verses[i] = v
 	}
@@ -89,13 +87,16 @@ func (e *Esv) Fetch() {
 }
 
 func (e Esv) Print() {
-	fmt.Printf("# %s\n", e.Input.Title)
-	fmt.Println("##Memory Verses")
+	fmt.Printf("#  %s\n", e.Input.Title)
+	fmt.Println("## Memory Verses")
 	for _, v := range e.MemoryVerses {
-		fmt.Println(v)
+		v = strings.Replace(v, "\n\n", " ", -1)
+		fmt.Printf("- %s", v)
 	}
-	fmt.Println("##Verses")
+	fmt.Println("\n\n## Verses")
 	for _, v := range e.Verses {
-		fmt.Println(v)
+		v = strings.Replace(v, "\n\n", " ", -1)
+		fmt.Printf("- %s", v)
 	}
+	fmt.Println("\n")
 }
