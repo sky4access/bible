@@ -8,14 +8,14 @@ import (
 	"strings"
 
 	_ "github.com/mattn/go-sqlite3"
-	bible_db "github.com/sky4access/bible/pkg/bible"
+	//bible_db "github.com/sky4access/bible/pkg/bible"
 	"gopkg.in/doug-martin/goqu.v4"
 	"gopkg.in/yaml.v2"
 )
 
 type Krv struct {
 	ConfigFile   string
-	Bible        bible_db.BibleDB
+	Bible        BibleDB
 	Input        Input
 	MemoryVerses []string
 	Verses       []string
@@ -27,7 +27,7 @@ func (k *Krv) Init() {
 	if err != nil {
 		panic(err)
 	}
-	k.Bible = bible_db.BibleDB{goqu.New("sqlite3", d)}
+	k.Bible = BibleDB{goqu.New("sqlite3", d)}
 
 	source, err := ioutil.ReadFile(k.ConfigFile)
 	check(err)

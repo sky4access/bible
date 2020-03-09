@@ -1,4 +1,4 @@
-package db
+package bible
 
 import (
 	"bytes"
@@ -90,12 +90,6 @@ func printVerse(entryName string, entries []Entry) string {
 		buffer.WriteString(fmt.Sprintf("(%v)%v", strconv.Itoa(int(entry.Verse)), entry.Content))
 	}
 	return buffer.String()
-}
-
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
 }
 
 var (
