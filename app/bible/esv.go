@@ -91,12 +91,12 @@ func (e Esv) Print() {
 	fmt.Println("## Memory Verses")
 	for _, v := range e.MemoryVerses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s", v)
+		fmt.Printf("- %s\n", v)
 	}
 	fmt.Println("\n\n## Verses")
 	for _, v := range e.Verses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s", v)
+		fmt.Printf("- %s\n", v)
 	}
 	fmt.Println("\n")
 }
