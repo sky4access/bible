@@ -90,10 +90,12 @@ func (e *Esv) Fetch() {
 func (e Esv) Generate() string {
 	var b bytes.Buffer
 	b.WriteString(fmt.Sprintf("#  %s\n", e.Input.Title))
-	b.WriteString(fmt.Sprintln("\n## Memory Verses"))
-	for _, v := range e.MemoryVerses {
-		v = strings.Replace(v, "\n\n", " ", -1)
-		b.WriteString(fmt.Sprintf("- %s\n", v))
+	if len(e.MemoryVerses) > 0 {
+		b.WriteString(fmt.Sprintln("\n## Memory Verses"))
+		for _, v := range e.MemoryVerses {
+			v = strings.Replace(v, "\n\n", " ", -1)
+			b.WriteString(fmt.Sprintf("- %s\n", v))
+		}
 	}
 	b.WriteString(fmt.Sprintln("\n## Verses"))
 	for _, v := range e.Verses {
