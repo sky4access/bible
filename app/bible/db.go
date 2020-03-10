@@ -20,6 +20,7 @@ type BibleDB struct {
 }
 
 func (m BibleDB) QueryBible(book string, chapter int, verses ...int) (string, []Entry, error) {
+	book = strings.ToLower(book)
 	ds := m.From("bible")
 	var q *goqu.Dataset
 	bookName := BooksByNumber[BooksByName[book]]

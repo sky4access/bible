@@ -69,10 +69,13 @@ func (k *Krv) Fetch() {
 func (k Krv) Generate() string {
 	var b bytes.Buffer
 	b.WriteString(fmt.Sprintf("#  %s\n", k.Input.Title))
-	b.WriteString(fmt.Sprintln("\n## Memory Verses"))
-	for _, v := range k.MemoryVerses {
-		v = strings.Replace(v, "\n\n", " ", -1)
-		b.WriteString(fmt.Sprintf("- %s\n", v))
+
+	if len(k.MemoryVerses) > 0 {
+		b.WriteString(fmt.Sprintln("\n## Memory Verses"))
+		for _, v := range k.MemoryVerses {
+			v = strings.Replace(v, "\n\n", " ", -1)
+			b.WriteString(fmt.Sprintf("- %s\n", v))
+		}
 	}
 	b.WriteString(fmt.Sprintln("\n## Verses"))
 	for _, v := range k.Verses {
