@@ -1,6 +1,7 @@
 package bible
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -86,17 +87,19 @@ func (e *Esv) Fetch() {
 	e.Verses = passages
 }
 
-func (e Esv) Print() {
-	fmt.Printf("#  %s\n", e.Input.Title)
-	fmt.Println("## Memory Verses")
+func (e Esv) Generate() string {
+	var b bytes.Buffer
+	b.WriteString(fmt.Sprintf("#  %s\n", e.Input.Title))
+	b.WriteString(fmt.Sprintln("\n## Memory Verses"))
 	for _, v := range e.MemoryVerses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s\n", v)
+		b.WriteString(fmt.Sprintf("- %s\n", v))
 	}
-	fmt.Println("\n\n## Verses")
+	b.WriteString(fmt.Sprintln("\n## Verses"))
 	for _, v := range e.Verses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s\n", v)
+		b.WriteString(fmt.Sprintf("- %s\n", v))
 	}
-	fmt.Println("\n")
+
+	return b.String()
 }

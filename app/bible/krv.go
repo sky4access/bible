@@ -1,6 +1,7 @@
 package bible
 
 import (
+	"bytes"
 	"database/sql"
 	"fmt"
 	"io/ioutil"
@@ -21,9 +22,13 @@ type Krv struct {
 	Verses       []string
 }
 
+const (
+	DB_FILE = "kofirst.db"
+)
+
 func (k *Krv) Init() {
 
-	d, err := sql.Open("sqlite3", "kofirst.db")
+	d, err := sql.Open("sqlite3", DB_FILE)
 	if err != nil {
 		panic(err)
 	}
@@ -61,17 +66,19 @@ func (k *Krv) Fetch() {
 	k.Verses = verses
 }
 
-func (k Krv) Print() {
-	fmt.Printf("#  %s\n", k.Input.Title)
-	fmt.Println("## Memory Verses")
+func (k Krv) Generate() string {
+	var b bytes.Buffer
+	b.WriteString(fmt.Sprintf("#  %s\n", k.Input.Title))
+	b.WriteString(fmt.Sprintln("\n## Memory Verses"))
 	for _, v := range k.MemoryVerses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s\n", v)
+		b.WriteString(fmt.Sprintf("- %s\n", v))
 	}
-	fmt.Println("\n\n## Verses")
+	b.WriteString(fmt.Sprintln("\n## Verses"))
 	for _, v := range k.Verses {
 		v = strings.Replace(v, "\n\n", " ", -1)
-		fmt.Printf("- %s\n", v)
+		b.WriteString(fmt.Sprintf("- %s\n", v))
 	}
-	fmt.Println("\n")
+
+	return b.String()
 }

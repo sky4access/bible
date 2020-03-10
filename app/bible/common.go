@@ -36,3 +36,9 @@ func callAPI(url string, param string) (*http.Response, error) {
 	response, err := client.Do(req)
 	return response, err
 }
+
+type Bible interface {
+	Init()
+	Fetch()
+	Generate() string
+}
