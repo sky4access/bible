@@ -6,3 +6,10 @@
 - Matthew 4:23   [23] And he went throughout all Galilee, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction among the people. 
 - Mark 15:15   [15] So Pilate, wishing to satisfy the crowd, released for them Barabbas, and having scourged Jesus, he delivered him to be crucified. 
 - Mark 15:25   [25] And it was the third hour when they crucified him. 
+- Mark 10:45   [45] For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.” 
+- Romans 5:8   [8] but God shows his love for us in that while we were still sinners, Christ died for us. 
+- Romans 5:12   [12] Therefore, just as sin came into the world through one man, and death through sin, and so death spread to all men because all sinned— 
+- Romans 3:23   [23] for all have sinned and fall short of the glory of God, 
+- Ephesians 1:7   [7] In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace, 
+- Ephesians 2:13–14   [13] But now in Christ Jesus you who once were far off have been brought near by the blood of Christ. [14] For he himself is our peace, who has made us both one and has broken down in his flesh the dividing wall of hostility 
+- Colossians 1:20   [20] and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross. 

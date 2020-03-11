@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"regexp"
 	"strings"
 
 	"gopkg.in/yaml.v2"
@@ -13,15 +12,12 @@ import (
 
 type Esv struct {
 	ConfigFile   string
-	BaseUrl      string
 	Input        Input
 	MemoryVerses []string
 	Verses       []string
 }
 
 func (e *Esv) Init() {
-	e.BaseUrl = "https://api.esv.org/v3/passage/text/?include-headings=false&include-footnotes=false&include-short-copyright=false&q="
-
 	source, err := ioutil.ReadFile(e.ConfigFile)
 	check(err)
 
@@ -32,25 +28,23 @@ func (e *Esv) Init() {
 
 }
 
-func (e *Esv) Fetch() {
+func fetchVerse(input []string) ([]string, error) {
+
 	type result struct {
 		Query     string
 		Canonical string
 		Passages  []string
 	}
 
-	space := regexp.MustCompile(`\s+`)
-
-	for i, v := range e.Input.Memories {
-		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
-		e.Input.Memories[i] = v
-	}
-
-	param := strings.Join(e.Input.Memories, ",")
-
-	response, err := callAPI(e.BaseUrl, param)
+	vs, err := toSearchableFormat(input)
 	if err != nil {
-		panic(err)
+		return nil, err
+	}
+	param := strings.Join(vs, ",")
+
+	response, err := callAPI(ESV_API_URL, param)
+	if err != nil {
+		return nil, err
 	}
 
 	var res result
@@ -62,29 +56,23 @@ func (e *Esv) Fetch() {
 	for _, v := range res.Passages {
 		passages = append(passages, v)
 	}
-	e.MemoryVerses = passages
 
-	for i, v := range e.Input.Verses {
-		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
-		e.Input.Verses[i] = v
-	}
+	return passages, nil
+}
 
-	param = strings.Join(e.Input.Verses, ",")
+func (e *Esv) Fetch() {
 
-	response, err = callAPI(e.BaseUrl, param)
+	fetchedVerse, err := fetchVerse(e.Input.Memories)
 	if err != nil {
 		panic(err)
 	}
+	e.MemoryVerses = fetchedVerse
 
-	err = json.NewDecoder(response.Body).Decode(&res)
+	fetchedVerse, err = fetchVerse(e.Input.Verses)
 	if err != nil {
 		panic(err)
 	}
-	passages = make([]string, 0)
-	for _, v := range res.Passages {
-		passages = append(passages, v)
-	}
-	e.Verses = passages
+	e.Verses = fetchedVerse
 }
 
 func (e Esv) Generate() string {

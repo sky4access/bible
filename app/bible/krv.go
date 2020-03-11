@@ -5,7 +5,6 @@ import (
 	"database/sql"
 	"fmt"
 	"io/ioutil"
-	"regexp"
 	"strings"
 
 	_ "github.com/mattn/go-sqlite3"
@@ -44,22 +43,24 @@ func (k *Krv) Init() {
 }
 
 func (k *Krv) Fetch() {
-
-	space := regexp.MustCompile(`\s+`)
-
 	verses := make([]string, 0)
-	for i, v := range k.Input.Memories {
-		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
-		k.Input.Memories[i] = v
+	vs, err := toSearchableFormat(k.Input.Memories)
+	if err != nil {
+		panic(err)
+	}
+	for _, v := range vs {
 		p := k.Bible.ParseVerses(v)
 		verses = append(verses, p)
 	}
 	k.MemoryVerses = verses
 
 	verses = make([]string, 0)
-	for i, v := range k.Input.Verses {
-		v = strings.Replace(space.ReplaceAllString(v, " "), " ", "+", -1)
-		k.Input.Verses[i] = v
+	vs, err = toSearchableFormat(k.Input.Verses)
+	if err != nil {
+		panic(err)
+	}
+
+	for _, v := range vs {
 		p := k.Bible.ParseVerses(v)
 		verses = append(verses, p)
 	}
