@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"strings"
+	"time"
 
 	"gopkg.in/yaml.v2"
 )
@@ -36,27 +37,26 @@ func fetchVerse(input []string) ([]string, error) {
 		Passages  []string
 	}
 
-	vs, err := toSearchableFormat(input)
-	if err != nil {
-		return nil, err
-	}
-	param := strings.Join(vs, ",")
-
-	response, err := callAPI(ESV_API_URL, param)
-	if err != nil {
-		return nil, err
-	}
-
-	var res result
-	err = json.NewDecoder(response.Body).Decode(&res)
-	if err != nil {
-		panic(err)
-	}
 	passages := make([]string, 0)
-	for _, v := range res.Passages {
-		passages = append(passages, v)
-	}
+	for _, param := range input {
+		response, err := callAPI(ESV_API_URL, toValidParam(param))
+		if err != nil {
+			return nil, err
+		}
 
+		var res result
+		err = json.NewDecoder(response.Body).Decode(&res)
+		if err != nil {
+			panic(err)
+		}
+
+		if len(res.Passages) > 0 {
+			passages = append(passages, res.Passages[0])
+		}
+
+		time.Sleep(30 * time.Millisecond)
+
+	}
 	return passages, nil
 }
 

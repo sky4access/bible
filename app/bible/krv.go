@@ -44,24 +44,24 @@ func (k *Krv) Init() {
 
 func (k *Krv) Fetch() {
 	verses := make([]string, 0)
-	vs, err := toSearchableFormat(k.Input.Memories)
-	if err != nil {
-		panic(err)
-	}
-	for _, v := range vs {
-		p := k.Bible.ParseVerses(v)
+	// vs, err := toSearchableFormat(k.Input.Memories)
+	// if err != nil {
+	// 	panic(err)
+	// }
+	for _, v := range k.Input.Memories {
+		p := k.Bible.ParseVerses(toValidParam(v))
 		verses = append(verses, p)
 	}
 	k.MemoryVerses = verses
 
 	verses = make([]string, 0)
-	vs, err = toSearchableFormat(k.Input.Verses)
-	if err != nil {
-		panic(err)
-	}
+	// vs, err = toSearchableFormat(k.Input.Verses)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	for _, v := range vs {
-		p := k.Bible.ParseVerses(v)
+	for _, v := range k.Input.Verses {
+		p := k.Bible.ParseVerses(toValidParam(v))
 		verses = append(verses, p)
 	}
 	k.Verses = verses

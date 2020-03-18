@@ -22,6 +22,10 @@ func TestToSearchableFormat(t *testing.T) {
 			[]string{"eph 2:13-14, 18, 20"},
 			[]string{"eph+2:13-14", "eph+2:18", "eph+2:20"},
 		},
+		{
+			[]string{"1cor 2:14"},
+			[]string{"1cor+2:14"},
+		},
 	}
 
 	for _, tt := range tests {

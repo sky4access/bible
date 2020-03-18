@@ -47,6 +47,11 @@ func callAPI(url string, param string) (*http.Response, error) {
 	return response, err
 }
 
+func toValidParam(v string) string {
+	space := regexp.MustCompile(`\s+`)
+	return strings.Replace(space.ReplaceAllString(v, " "), " ", "+", 1)
+}
+
 // {"john 1:1", "mark 2:1,5"} => {"john+1:1", "mark+2:1", "mark+2:5"}
 func toSearchableFormat(verses []string) ([]string, error) {
 	result := make([]string, 0)

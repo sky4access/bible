@@ -10,13 +10,13 @@ OUTPUTDIR=$(shell pwd)/output/one2one
 build:  ## build go binary
 	GOOS=$(GOOS) GOARCH=$(GOARCH) $(GOENVS) go build  -o bible ./app/main.go
 
-.PHONE: generate
-generate: build ## generate bible text
-	@for f in $(shell ls ${INPUTDIR}); \
-		do \
-			$(EXEC) -config $(INPUTDIR)/$${f} > ${OUTPUTDIR}/$${f}.md; \
-			$(EXEC) -config $(INPUTDIR)/$${f} -lang kor > ${OUTPUTDIR}/$${f}_kor.md; \
-	done;
+# .PHONE: generate
+# generate: build ## generate bible text
+# 	@for f in $(shell ls ${INPUTDIR}); \
+# 		do \
+# 			$(EXEC) -config $(INPUTDIR)/$${f} > ${OUTPUTDIR}/$${f}.md; \
+# 			$(EXEC) -config $(INPUTDIR)/$${f} -lang kor > ${OUTPUTDIR}/$${f}_kor.md; \
+# 	done;
 	
 
 	# $(EXEC)
