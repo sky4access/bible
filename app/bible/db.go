@@ -255,7 +255,7 @@ var (
 		"colossians":     51,
 		"col":            51,
 		"1thessalonians": 52,
-		"1the2":          52,
+		"1thess":         52,
 		"2thessalonians": 53,
 		"2thess":         53,
 		"1timothy":       54,
