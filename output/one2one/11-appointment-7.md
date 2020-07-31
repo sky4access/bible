@@ -11,6 +11,7 @@
 - John 20:22   [22] And when he had said this, he breathed on them and said to them, “Receive the Holy Spirit. 
 - Acts 8:17   [17] Then they laid their hands on them and they received the Holy Spirit. 
 - Acts 10:44   [44] While Peter was still saying these things, the Holy Spirit fell on all who heard the word. 
+- 1 John 1:8   [8] If we say we have no sin, we deceive ourselves, and the truth is not in us. 
 - Romans 7:24   [24] Wretched man that I am! Who will deliver me from this body of death? 
 - Galatians 5:17   [17] For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. 
 - Romans 8:9–10   [9] You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. [10] But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. 
