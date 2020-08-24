@@ -1,0 +1,49 @@
+#  Appointment 9. Obedience
+
+## Memory Verses
+- Romans 12:1   [1] I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 
+- Luke 9:23   [23] And he said to all, “If anyone would come after me, let him deny himself and take up his cross daily and follow me. 
+
+## Verses
+- Matthew 4:19   [19] And he said to them, “Follow me, and I will make you fishers of men.” 
+- Luke 5:1–11   [1] On one occasion, while the crowd was pressing in on him to hear the word of God, he was standing by the lake of Gennesaret, [2] and he saw two boats by the lake, but the fishermen had gone out of them and were washing their nets. [3] Getting into one of the boats, which was Simon’s, he asked him to put out a little from the land. And he sat down and taught the people from the boat. [4] And when he had finished speaking, he said to Simon, “Put out into the deep and let down your nets for a catch.” [5] And Simon answered, “Master, we toiled all night and took nothing! But at your word I will let down the nets.” [6] And when they had done this, they enclosed a large number of fish, and their nets were breaking. [7] They signaled to their partners in the other boat to come and help them. And they came and filled both the boats, so that they began to sink. [8] But when Simon Peter saw it, he fell down at Jesus’ knees, saying, “Depart from me, for I am a sinful man, O Lord.” [9] For he and all who were with him were astonished at the catch of fish that they had taken, [10] and so also were James and John, sons of Zebedee, who were partners with Simon. And Jesus said to Simon, “Do not be afraid; from now on you will be catching men.” [11] And when they had brought their boats to land, they left everything and followed him. 
+- Matthew 28:18   [18] And Jesus came and said to them, “All authority in heaven and on earth has been given to me. 
+- Romans 12:1   [1] I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 
+- Luke 9:23   [23] And he said to all, “If anyone would come after me, let him deny himself and take up his cross daily and follow me. 
+- Luke 14:25–27   [25] Now great crowds accompanied him, and he turned and said to them, [26] “If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. [27] Whoever does not bear his own cross and come after me cannot be my disciple. 
+- Luke 14:33   [33] So therefore, any one of you who does not renounce all that he has cannot be my disciple. 
+- Mark 10:17–22   [17] And as he was setting out on his journey, a man ran up and knelt before him and asked him, “Good Teacher, what must I do to inherit eternal life?” [18] And Jesus said to him, “Why do you call me good? No one is good except God alone. [19] You know the commandments: ‘Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.’” [20] And he said to him, “Teacher, all these I have kept from my youth.” [21] And Jesus, looking at him, loved him, and said to him, “You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.” [22] Disheartened by the saying, he went away sorrowful, for he had great possessions. 
+- Ecclesiastes 7:14   [14] In the day of prosperity be joyful, and in the day of adversity consider: God has made the one as well as the other, so that man may not find out anything that will be after him. 
+- Philippians 1:29   [29] For it has been granted to you that for the sake of Christ you should not only believe in him but also suffer for his sake, 
+- Romans 8:17–18   [17] and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him.   [18] For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us. 
+- John 12:24   [24] Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. 
+- Ephesians 5:22   [22] Wives, submit to your own husbands, as to the Lord. 
+- Ephesians 5:25   [25] Husbands, love your wives, as Christ loved the church and gave himself up for her, 
+- Ephesians 6:1   [1] Children, obey your parents in the Lord, for this is right. 
+- 1 Peter 5:5   [5] Likewise, you who are younger, be subject to the elders. Clothe yourselves, all of you, with humility toward one another, for “God opposes the proud but gives grace to the humble.” 
+- Colossians 3:22   [22] Bondservants, obey in everything those who are your earthly masters, not by way of eye-service, as people-pleasers, but with sincerity of heart, fearing the Lord. 
+- Romans 13:1   [1] Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God. 
+- Acts 4:19   [19] But Peter and John answered them, “Whether it is right in the sight of God to listen to you rather than to God, you must judge, 
+- Genesis 12:1–4   [1] Now the LORD said to Abram, “Go from your country and your kindred and your father’s house to the land that I will show you. [2] And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing. [3] I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed.”   [4] So Abram went, as the LORD had told him, and Lot went with him. Abram was seventy-five years old when he departed from Haran. 
+- Hebrews 11:8   [8] By faith Abraham obeyed when he was called to go out to a place that he was to receive as an inheritance. And he went out, not knowing where he was going. 
+- Genesis 22:1–3   [1] After these things God tested Abraham and said to him, “Abraham!” And he said, “Here I am.” [2] He said, “Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I shall tell you.” [3] So Abraham rose early in the morning, saddled his donkey, and took two of his young men with him, and his son Isaac. And he cut the wood for the burnt offering and arose and went to the place of which God had told him. 
+- Genesis 22:9–12   [9] When they came to the place of which God had told him, Abraham built the altar there and laid the wood in order and bound Isaac his son and laid him on the altar, on top of the wood. [10] Then Abraham reached out his hand and took the knife to slaughter his son. [11] But the angel of the LORD called to him from heaven and said, “Abraham, Abraham!” And he said, “Here I am.” [12] He said, “Do not lay your hand on the boy or do anything to him, for now I know that you fear God, seeing you have not withheld your son, your only son, from me.” 
+- Genesis 22:17–18   [17] I will surely bless you, and I will surely multiply your offspring as the stars of heaven and as the sand that is on the seashore. And your offspring shall possess the gate of his enemies, [18] and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice.” 
+- 1 Samuel 15:18–23   [18] And the LORD sent you on a mission and said, ‘Go, devote to destruction the sinners, the Amalekites, and fight against them until they are consumed.’ [19] Why then did you not obey the voice of the LORD? Why did you pounce on the spoil and do what was evil in the sight of the LORD?” [20] And Saul said to Samuel, “I have obeyed the voice of the LORD. I have gone on the mission on which the LORD sent me. I have brought Agag the king of Amalek, and I have devoted the Amalekites to destruction. [21] But the people took of the spoil, sheep and oxen, the best of the things devoted to destruction, to sacrifice to the LORD your God in Gilgal.” [22] And Samuel said,     “Has the LORD as great delight in burnt offerings and sacrifices,
+        as in obeying the voice of the LORD?
+    Behold, to obey is better than sacrifice,
+        and to listen than the fat of rams.
+    [23] For rebellion is as the sin of divination,
+        and presumption is as iniquity and idolatry.
+    Because you have rejected the word of the LORD,
+        he has also rejected you from being king.”
+     
+- Romans 5:19   [19] For as by the one man’s disobedience the many were made sinners, so by the one man’s obedience the many will be made righteous. 
+- Hebrews 5:8–9   [8] Although he was a son, he learned obedience through what he suffered. [9] And being made perfect, he became the source of eternal salvation to all who obey him, 
+- 1 Peter 1:22   [22] Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, 
+- 1 John 3:22   [22] and whatever we ask we receive from him, because we keep his commandments and do what pleases him. 
+- Acts 5:32   [32] And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him.” 
+- John 15:10   [10] If you keep my commandments, you will abide in my love, just as I have kept my Father’s commandments and abide in his love. 
+- John 15:14   [14] You are my friends if you do what I command you. 
+- John 14:23   [23] Jesus answered him, “If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. 
+- 1 John 2:5   [5] but whoever keeps his word, in him truly the love of God is perfected. By this we may know that we are in him: 
