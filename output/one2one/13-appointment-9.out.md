@@ -1,7 +1,7 @@
-#  Appointment 6. The Spirit Filled Life
+#  Appointment 9. Obedience
 
 ## Memory Verses
-- Ephesians 5:18   [18] And do not get drunk with wine, for that is debauchery, but be filled with the Spirit, 
-- Galatians 5:22–23   [22] But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, [23] gentleness, self-control; against such things there is no law. 
+- Romans 12:1   [1] I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 
+- Luke 9:23   [23] And he said to all, “If anyone would come after me, let him deny himself and take up his cross daily and follow me. 
 
 ## Verses
