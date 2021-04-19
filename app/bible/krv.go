@@ -22,7 +22,7 @@ type Krv struct {
 }
 
 const (
-	DB_FILE = "kofirst.db"
+	DB_FILE = "KRV.SQLite3"
 )
 
 func (k *Krv) Init() {
@@ -44,10 +44,6 @@ func (k *Krv) Init() {
 
 func (k *Krv) Fetch() {
 	verses := make([]string, 0)
-	// vs, err := toSearchableFormat(k.Input.Memories)
-	// if err != nil {
-	// 	panic(err)
-	// }
 	for _, v := range k.Input.Memories {
 		p := k.Bible.ParseVerses(toValidParam(v))
 		verses = append(verses, p)
@@ -55,10 +51,6 @@ func (k *Krv) Fetch() {
 	k.MemoryVerses = verses
 
 	verses = make([]string, 0)
-	// vs, err = toSearchableFormat(k.Input.Verses)
-	// if err != nil {
-	// 	panic(err)
-	// }
 
 	for _, v := range k.Input.Verses {
 		p := k.Bible.ParseVerses(toValidParam(v))

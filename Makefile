@@ -1,7 +1,7 @@
 SHELL:=/bin/bash
 +DESTDIR:=.
-GOARCH:=amd64
-GOOS:=darwin
+GOARCH:=$(shell go env GOARCH)
+GOOS:=$(shell go env GOOS)
 EXEC:=./bible
 INPUTDIR=$(shell pwd)/input/one2one
 OUTPUTDIR=$(shell pwd)/output/one2one
